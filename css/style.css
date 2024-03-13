@@ -1,0 +1,65 @@
+@import url(recet.css);
+
+.header-menu {
+  background-color: rgb(255, 166, 0);
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(168, 230, 168);
+  padding: 10px 20px;
+  background: rgb(141, 91, 0);
+  display: block;
+}
+
+.header-list li {
+  position: relative;
+}
+
+.header-second-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-list li:hover .header-second-list {
+  display: block;
+}
+
+.header-second-list a {
+  background: rgb(255, 224, 20);
+}
+
+.flex-block {
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  display: none;
+  padding-top: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.flex1:hover .flex-block {
+  display: block;
+}
+
+.flex-block :hover {
+  display: block;
+}
