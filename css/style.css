@@ -1,7 +1,7 @@
 @import url(recet.css);
 
 .header-menu {
-  background-color: rgb(255, 166, 0);
+  background-color: #ffa600;
   padding: 20px 0;
 }
 
@@ -20,9 +20,9 @@
 .header-list a {
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(168, 230, 168);
-  padding: 10px 20px;
-  background: rgb(141, 91, 0);
+  color: rgb(69, 33, 124);
+  padding: 12px 20px;
+  background: rgb(118, 214, 8);
   display: block;
 }
 
@@ -37,6 +37,7 @@
   display: none;
   padding-top: 20px;
   font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
 }
 
 .header-list li:hover .header-second-list {
@@ -44,16 +45,17 @@
 }
 
 .header-second-list a {
-  background: rgb(255, 224, 20);
+  background: rgba(125, 109, 6, 0.542);
 }
 
 .flex-block {
   position: absolute;
-  top: 100%;
-  left: -100%;
+  top: 0;
+  right: 100%;
   display: none;
   padding-top: 0px;
   font-family: "Open Sans", sans-serif;
+  white-space: nowrap;
 }
 
 .flex1:hover .flex-block {
@@ -62,4 +64,160 @@
 
 .flex-block :hover {
   display: block;
+}
+
+a.home {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding-left: 45px;
+}
+
+a.home::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background: url(../svg/home-1-svgrepo-com.svg) no-repeat 50% / 30px;
+}
+
+a.gallery {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding-left: 45px;
+}
+
+a.gallery::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background: url(../svg/gallery-minimalistic-svgrepo-com.svg) no-repeat 50% /
+    30px;
+}
+
+a.homeworks {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding-left: 45px;
+}
+
+a.homeworks::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background: url(../svg/work-svgrepo-com.svg) no-repeat 50% / 30px;
+}
+
+footer {
+  padding: 60px 0;
+  background: #2f303a;
+  font-size: 14px;
+  margin-top: 300px;
+}
+
+a.telega {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding-left: 45px;
+}
+
+a.telega::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: url(../svg/telegram-svgrepo-com.svg) no-repeat 50% / 30px;
+}
+
+a.twitter {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding-left: 45px;
+}
+
+a.twitter::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: url(../svg/twitter-round-svgrepo-com.svg) no-repeat 50% / 30px;
+}
+
+a.instagram {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding-left: 45px;
+}
+
+a.instagram::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: url(../svg/insta-svgrepo-com.svg) no-repeat 50% / 30px;
+}
+
+a.phone {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding-left: 45px;
+}
+
+a.phone::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: url(../svg/phone-svgrepo-com.svg) no-repeat 50% / 30px;
+}
+
+a.flex-icon {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding-left: 45px;
+}
+
+a.flex-icon::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: url(../svg/arrow-left-svgrepo-com.svg) no-repeat 50% / 30px;
+}
+
+.icons {
+  padding: 20px 0;
+  background: rgb(113, 42, 228);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+li {
+  list-style-type: none;
 }
